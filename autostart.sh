@@ -34,6 +34,10 @@ sxhkd -c ~/.config/arco-dwm/sxhkd/sxhkdrc &
 #you can set wallpapers in themes as well
 feh --bg-fill /home/mizuuu/Pictures/wallhaven-x8ye3z_1920x1080.png &
 
+export _JAVA_AWT_WM_NONREPARENTING=1 &
+export AWT_TOOLKIT=MToolkit &
+wmname LG3D &
+
 #run applications from startup
 
 #run "insync start"

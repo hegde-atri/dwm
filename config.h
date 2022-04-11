@@ -100,8 +100,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_i,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_f,	   zoom,           {0} },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_s,      incnmaster,     {.i = +1 } },
+	{ MODKEY,                       XK_m,      incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_k,      incnmaster,     {.i = +1 } },
 	{ MODKEY,		                XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_a,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[1]} },
@@ -121,7 +121,7 @@ static Key keys[] = {
 	{ MODKEY,			            XK_minus,  setgaps,	       {.i = -1 } },
 	{ MODKEY,			            XK_equal,  setgaps,	       {.i = +1 } },
 	{ MODKEY|ShiftMask,		        XK_equal,  setgaps,	       {.i =  0 } },
-
+	{ MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
