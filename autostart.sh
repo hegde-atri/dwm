@@ -37,7 +37,7 @@ feh --bg-fill /home/mizuuu/Pictures/wallhaven-x8ye3z_1920x1080.png &
 #run applications from startup
 
 #run "insync start"
-run "spotify"
+#run "spotify"
 #run "ckb-next -b"
 #run "discord"
 #run "telegram-desktop"
