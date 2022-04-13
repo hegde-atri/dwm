@@ -1,0 +1,47 @@
+# MAIN KEYS
+
+# dmenu
+super + space
+	$HOME/source/dwm/scripts/dmen.sh
+
+#################################################################
+#                        MULTIMEDIA KEYS                        #
+#################################################################
+
+#Raises volume
+XF86AudioRaiseVolume
+    pamixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    pamixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#Playerctl works for Pragha, Spotify and others
+#Delete the line for playerctl if you want to use mpc
+#and replace it with the corresponding code
+#mpc works for e.g.ncmpcpp
+#mpc toggle
+#mpc next
+#mpc prev
+#mpc stop
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
