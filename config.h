@@ -13,8 +13,7 @@ static const char dmenufont[]       = "JetBrains Mono:size=10";
 
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
-/* static const char *tags[] = { "", "", "", "", "", "", "", "", "" }; */
+static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -63,7 +62,7 @@ static const char *browsercmd[] = { "firefox", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_g,  spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_g,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_u,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
